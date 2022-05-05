@@ -7,12 +7,12 @@ services:
     container_name: laravel_svc1
     restart: always
     environment:
-      DATABASE_CONNECTION: mysql
-      DATABASE_HOST: mysql_host
-      DATABASE_PORT: 3306
-      DATABASE_DATABASE: laravel_db
-      DATABASE_USER: root
-      DATABASE_PASSWORD: root
+      DB_CONNECTION: mysql
+      DB_HOST: mysql_host
+      DB_PORT: 3306
+      DB_DATABASE: laravel_db
+      DB_USERNAME: root
+      DB_PASSWORD: root
     ports:
       - 8080:80
     volumes:
